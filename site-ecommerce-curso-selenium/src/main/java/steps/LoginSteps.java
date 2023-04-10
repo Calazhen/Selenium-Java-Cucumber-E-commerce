@@ -2,6 +2,7 @@ package steps;
 
 import cucumber.api.java.pt.Dado;
 import pages.LoginPage;
+import runner.RunBase;
 import runner.RunCucumberTest;
 
 public class LoginSteps extends RunCucumberTest {

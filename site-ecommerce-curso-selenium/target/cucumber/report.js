@@ -61,35 +61,35 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 9821149100,
+  "duration": 10743583200,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.acesso_o_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 932463200,
+  "duration": 351994800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.eu_preencho_o_formulário_de_cadastro()"
 });
 formatter.result({
-  "duration": 1167514100,
+  "duration": 925616600,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.clico_em_registrar()"
 });
 formatter.result({
-  "duration": 176609400,
+  "duration": 282770400,
   "status": "passed"
 });
 formatter.match({
   "location": "SecretSteps.vejo_a_mensage_de_cadastro_realizado_com_sucesso()"
 });
 formatter.result({
-  "duration": 87127800,
+  "duration": 42831200,
   "status": "passed"
 });
 });

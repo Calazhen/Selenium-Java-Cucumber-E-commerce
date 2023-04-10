@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class RunBase {
+public class  RunBase {
 
     static WebDriver driver;
 
-    private enum  Browser {CHROME,FIREFOX}
+    public enum  Browser {CHROME,FIREFOX}
 
     public static WebDriver getDriver (){
 
@@ -33,8 +33,9 @@ public class RunBase {
                 break;
 
             case FIREFOX:
-                System.setProperty("webdriver.chrome.driver", "/Users/calaz/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "/Users/calaz/geckodriver.exe");
                 driver = new FirefoxDriver();
+                break;
 
             default:
                 throw  new IllegalArgumentException("Passe um  navegador válido");
