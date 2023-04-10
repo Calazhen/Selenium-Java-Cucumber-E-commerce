@@ -2,18 +2,18 @@ package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import runner.RunCucumberTest;
 import support.Utils;
 
 
-public class SecretPage extends Utils {
+public class SecretPage extends RunCucumberTest {
 
     private By mensagem_sucesso = By.id("swal2-title");
-    private By mensagem_bem_vindo = By.id("swal2-html-container");
-    private By botao_ok = By.id("");
+
 
 
     public void verificaMensagemSucesso(){
-        Assert.assertEquals("Cadastro realizado!",driver.findElement(mensagem_sucesso).getText());
+        Assert.assertEquals("Cadastro realizado!",getDriver().findElement(mensagem_sucesso).getText());
     }
 
 }

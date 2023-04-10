@@ -1,10 +1,10 @@
 package pages;
 
-import org.apache.maven.plugin.logging.Log;
 import org.openqa.selenium.By;
+import runner.RunCucumberTest;
 import support.Utils;
 
-public class CadastroPage extends Utils {
+public class CadastroPage extends RunCucumberTest {
 
     private By ainda_nao_tem_conta = By.cssSelector("#createAccount");
     private By campo_usuario = By.id("user");
@@ -14,18 +14,18 @@ public class CadastroPage extends Utils {
 
 
     public void acessaPaginaCadastro (){
-        esperarElementoEstarPresente(ainda_nao_tem_conta,8);
-        driver.findElement(ainda_nao_tem_conta).click();
+        Utils.esperarElementoEstarPresente(ainda_nao_tem_conta,8);
+        getDriver().findElement(ainda_nao_tem_conta).click();
     }
 
     public void preencheFormularioCadastro (String nome_usuario,String email,String senha){
-        esperarElementoEstarPresente(campo_usuario,8);
-        driver.findElement(campo_usuario).sendKeys(nome_usuario);
-        driver.findElement(campo_email).sendKeys(email);
-        driver.findElement(campo_senha).sendKeys(senha);
+        Utils.esperarElementoEstarPresente(campo_usuario,8);
+        getDriver().findElement(campo_usuario).sendKeys(nome_usuario);
+        getDriver().findElement(campo_email).sendKeys(email);
+        getDriver().findElement(campo_senha).sendKeys(senha);
     }
 
     public void clicarBotaoCadastrar(){
-        driver.findElement(botao_cadastrar).click();
+        getDriver().findElement(botao_cadastrar).click();
     }
 }
