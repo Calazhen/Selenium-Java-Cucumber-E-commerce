@@ -4,29 +4,29 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class  RunBase {
+public class RunBase {
 
     static WebDriver driver;
 
-    public enum  Browser {CHROME,FIREFOX}
+    public enum Browser {CHROME, FIREFOX}
 
-    public static WebDriver getDriver (){
+    public static WebDriver getDriver() {
 
-        if (driver==null){
-          return  getDriver(Browser.CHROME);
-        }else {
+        if (driver == null) {
+            return getDriver(Browser.CHROME);
+        } else {
             return driver;
         }
 
     }
 
-    public static WebDriver getDriver(Browser browser){
+    public static WebDriver getDriver(Browser browser) {
 
-        if (driver!= null){
+        if (driver != null) {
             driver.quit();
         }
 
-        switch (browser){
+        switch (browser) {
             case CHROME:
                 System.setProperty("webdriver.chrome.driver", "/Users/calaz/chromedriver.exe");
                 driver = new ChromeDriver();
@@ -38,7 +38,7 @@ public class  RunBase {
                 break;
 
             default:
-                throw  new IllegalArgumentException("Passe um  navegador válido");
+                throw new IllegalArgumentException("Passe um  navegador válido");
         }
         return driver;
     }

@@ -12,12 +12,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @CucumberOptions(
         plugin = {"pretty", "html:target/cucumber"},
         features = "src/main/resources/features",
-        tags = {"@cadastro_sucesso"}, //~@ignore para todos os testes com a anotação diferente de ignore
+        tags = {"@enviar-mensagem-sucesso"}, //~@ignore para todos os testes com a anotação diferente de ignore
         glue = {"steps"}
 
 )
 public class RunCucumberTest extends RunBase {
-    public static WebDriver driver;
+
 
     @AfterClass
     public static void stop() {
