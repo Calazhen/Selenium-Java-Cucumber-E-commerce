@@ -10,21 +10,19 @@ import support.Utils;
 
 public class MensagemPage extends RunCucumberTest {
 
-    private String BaseUrl = "https://automationexercise.com/contact_us";
-    private By campo_nome_mensagem = By.cssSelector("input[placeholder='Name']");
-    private By campo_email_mensagem = By.cssSelector("input[placeholder='Email']");
-    private By campo_assunto_mensagem = By.cssSelector("input[placeholder='Subject']");
-    private By campo_corpo_da_mensagem = By.cssSelector("#message");
-    private By campo_anexo = By.cssSelector("input[name='upload_file']");
-    private By botao_enviar_mensagem = By.cssSelector("input[value='Submit']");
-
-    private By mensagem_sucesso = By.cssSelector(".status.alert.alert-success");
+    final private By campo_nome_mensagem = By.cssSelector("input[placeholder='Name']");
+    final private By campo_email_mensagem = By.cssSelector("input[placeholder='Email']");
+    final private By campo_assunto_mensagem = By.cssSelector("input[placeholder='Subject']");
+    final private By campo_corpo_da_mensagem = By.cssSelector("#message");
+    final private By campo_anexo = By.cssSelector("input[name='upload_file']");
+    final private By botao_enviar_mensagem = By.cssSelector("input[value='Submit']");
+    final private By mensagem_sucesso = By.cssSelector(".status.alert.alert-success");
 
 
     public void acessaTelaMensagem() {
         RunBase.getDriver(Browser.CHROME);
         getDriver().get("https://automationexercise.com/contact_us");
-        Utils.esperarElementoEstarPresente(botao_enviar_mensagem, 8);
+        Utils.esperarElementoEstarClicavel(botao_enviar_mensagem, 8);
     }
 
     public void preencheCampoNome(String nome) {

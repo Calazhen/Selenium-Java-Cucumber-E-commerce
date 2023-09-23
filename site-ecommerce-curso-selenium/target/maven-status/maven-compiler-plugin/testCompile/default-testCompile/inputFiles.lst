@@ -1,12 +1,12 @@
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\CadastroSteps.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\SecretSteps.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\support\ScreenshotUtils.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\support\Utils.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\CadastroPage.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\LoginPage.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\MensagemPage.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\mensagemSteps.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\LoginSteps.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\runner\RunCucumberTest.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\SecretPage.java
-D:\Perfil\HCGB\Documents\Projetos novos\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\runner\RunBase.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\LoginSteps.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\SecretSteps.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\MensagemPage.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\mensagemSteps.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\SecretPage.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\CadastroPage.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\runner\RunBase.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\runner\RunCucumberTest.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\support\ScreenshotUtils.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\support\Utils.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\steps\CadastroSteps.java
+C:\Users\calaz\IdeaProjects\Selenium-Java-Cucumber-E-commerce\site-ecommerce-curso-selenium\src\test\java\pages\LoginPage.java

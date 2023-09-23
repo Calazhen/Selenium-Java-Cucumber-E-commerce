@@ -9,12 +9,15 @@ import java.util.Random;
 
 
 public class Utils extends RunCucumberTest {
-    public static void esperarElementoEstarPresente(By elemento, int tempo) {
+    public static void esperarElementoEstarClicavel(By elemento, int tempo) {
         WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
         wait.until(ExpectedConditions.elementToBeClickable(elemento));
     }
 
-
+    public static void esperarElementoEstarVisivel(By elemento, int tempo) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));
+    }
 
     public static String randomEmail(){
 

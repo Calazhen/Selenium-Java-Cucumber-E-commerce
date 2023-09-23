@@ -20,12 +20,12 @@ public class LoginSteps extends RunCucumberTest {
 
     @After
     public static void takeScreenShoot (Scenario scenario){
+        if ((scenario.isFailed())) {
         System.out.println("============================");
         System.out.println("Test que falhou: " + scenario.getName());
         System.out.println("Status: " + scenario.getStatus());
         System.out.println("Tag: " + scenario.getSourceTagNames());
         System.out.println("============================");
-        if ((scenario.isFailed())) {
             // Tirar print da tela
             ScreenshotUtils.addScreenshotOnScenario(scenario);
         }
