@@ -20,9 +20,9 @@ formatter.feature({
 });
 formatter.scenario({
   "line": 6,
-  "name": "Registrar novo usuário com sucesso",
+  "name": "Registrar novo usuario com sucesso",
   "description": "",
-  "id": "cadastro-de-usuário;registrar-novo-usuário-com-sucesso",
+  "id": "cadastro-de-usuário;registrar-novo-usuario-com-sucesso",
   "type": "scenario",
   "keyword": "Cenario",
   "tags": [
@@ -61,39 +61,37 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 2745638500,
-  "status": "passed"
+  "duration": 49414600,
+  "error_message": "java.lang.NullPointerException\r\n\tat pages.LoginPage.acessaAplicacao(LoginPage.java:16)\r\n\tat steps.LoginSteps.que_estou_na_tela_de_login(LoginSteps.java:16)\r\n\tat ✽.Dado que estou na tela de login(cadastro_usuario.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CadastroSteps.acesso_o_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 629505900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CadastroSteps.eu_preencho_o_formulário_de_cadastro()"
 });
 formatter.result({
-  "duration": 758309400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CadastroSteps.clico_em_registrar()"
 });
 formatter.result({
-  "duration": 54330800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SecretSteps.vejo_a_mensage_de_cadastro_realizado_com_sucesso()"
 });
 formatter.result({
-  "duration": 59913600,
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 62400,
+  "duration": 1779790800,
   "status": "passed"
 });
 formatter.uri("mensagem.feature");
@@ -154,32 +152,32 @@ formatter.match({
   "location": "mensagemSteps.que_estou_na_tela_de_mensagem()"
 });
 formatter.result({
-  "duration": 5467548100,
+  "duration": 4600243600,
   "status": "passed"
 });
 formatter.match({
   "location": "mensagemSteps.preencho_todos_os_campos()"
 });
 formatter.result({
-  "duration": 525910800,
+  "duration": 550545300,
   "status": "passed"
 });
 formatter.match({
   "location": "mensagemSteps.clico_em_enviar_mensagem()"
 });
 formatter.result({
-  "duration": 68234000,
+  "duration": 69883500,
   "status": "passed"
 });
 formatter.match({
   "location": "mensagemSteps.vejo_o_feedback_de_viagem_enviada_com_sucesso()"
 });
 formatter.result({
-  "duration": 42565400,
+  "duration": 46992000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 33600,
+  "duration": 29000,
   "status": "passed"
 });
 });
