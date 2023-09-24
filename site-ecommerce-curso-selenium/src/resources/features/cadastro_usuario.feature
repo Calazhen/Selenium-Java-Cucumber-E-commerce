@@ -8,4 +8,4 @@ Funcionalidade: Cadastro de usuário
     E acesso o cadastro de usuário
     Quando eu preencho o formulário de cadastro
     E clico em registrar
-    Entao  vejo a mensage de cadastro realizado com sucesso
+    Entao  vejo a mensagem "Cadastro realizado!" com sucesso

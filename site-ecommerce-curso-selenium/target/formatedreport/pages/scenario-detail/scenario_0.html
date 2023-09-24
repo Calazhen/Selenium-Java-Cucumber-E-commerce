@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Scenario Details - 2023/09/23 18:14:48</title> 
+  <title>Scenario Details - 2023/09/24 12:33:07</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -39,13 +39,13 @@
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2023/09/23 18:14:48</span> 
+    <span class="text-light">2023/09/24 12:33:07</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'Registrar novo usuario com sucesso'</h3> 
+     <h3>Scenario 'falha no login, email'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -72,12 +72,12 @@
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>5</strong> Step(s)</li> 
-         <li class="list-group-item"><strong>0</strong> passed</li> 
-         <li class="list-group-item"><strong>1</strong> failed</li> 
-         <li class="list-group-item"><strong>4</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 01s 829ms</li> 
-         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_cadastro_sucesso.html">@cadastro_sucesso</a> </li> 
+         <li class="list-group-item"><strong>4</strong> Step(s)</li> 
+         <li class="list-group-item"><strong>4</strong> passed</li> 
+         <li class="list-group-item"><strong>0</strong> failed</li> 
+         <li class="list-group-item"><strong>0</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 03s 735ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_login.html">@login</a>, <a href="pages/tag-scenarios/tag_login-falha.html">@login-falha</a> </li> 
         </ul> 
        </div> 
       </div> 
@@ -91,7 +91,7 @@
        </div> 
        <div class="card-body"> 
         <li class="list-group-item"> 
-         <div class="row row_failed"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 1
@@ -102,93 +102,65 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 049ms
+            0m 02s 759ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-danger">failed</span> 
-          </div> 
-          <div class="w-100 mt-3"> 
-           <div class="col-9 text-left border border-danger m-auto"> 
-            <code>java.lang.NullPointerException at pages.LoginPage.acessaAplicacao(LoginPage.java:16) at steps.LoginSteps.que_estou_na_tela_de_login(LoginSteps.java:16) at ✽.Dado que estou na tela de login(cadastro_usuario.feature:7) </code> 
-           </div> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 2
            </nobr> 
           </div> 
           <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="CadastroSteps.acesso_o_cadastro_de_usuário()"> E acesso o cadastro de usuário </span> 
+           <span data-toggle="tooltip" title="LoginSteps.preencho_login_e_senha(String,String)"> Quando preencho login "<strong>a.com</strong>" e senha "<strong>123456</strong>" </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 854ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 3
            </nobr> 
           </div> 
           <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="CadastroSteps.eu_preencho_o_formulário_de_cadastro()"> Quando eu preencho o formulário de cadastro </span> 
+           <span data-toggle="tooltip" title="LoginSteps.clico_em_Login()"> E clico em Login </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 052ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 4
            </nobr> 
           </div> 
           <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="CadastroSteps.clico_em_registrar()"> E clico em registrar </span> 
+           <span data-toggle="tooltip" title="LoginSteps.vejo_a_mensagem_de_email(String)"> Então vejo a mensagem de email "<strong>E-mail inválido.</strong>" </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 070ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
-          </div> 
-         </div> 
-         <div class="row row_skipped"> 
-          <div class="col-2 text-left"> 
-           <nobr>
-            Step 5
-           </nobr> 
-          </div> 
-          <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="SecretSteps.vejo_a_mensage_de_cadastro_realizado_com_sucesso()"> Entao vejo a mensage de cadastro realizado com sucesso </span> 
-          </div> 
-          <div class="col-2 text-left"> 
-           <nobr>
-            0m 00s 000ms
-           </nobr> 
-          </div> 
-          <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
-          </div> 
-          <div class="w-100 mt-3"> 
-           <div class="col-9 text-left m-auto"> 
-            <a class="grouped_elements" rel="images" href="attachments/attachment000.png"> <img src="attachments/attachment000.png" style="max-width: 100%"> </a> 
-           </div> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> </li> 
        </div> 
@@ -213,7 +185,7 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 01s 779ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -228,7 +200,7 @@
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/09/23 18:14:48.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/09/24 12:33:07.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -264,22 +236,19 @@
       "Step 2",
       "Step 3",
       "Step 4",
-      "Step 5",
       "After 0",
       "After 1"
     ],
     "datasets": [
       {
         "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          1779
+          2759,
+          854,
+          52,
+          70,
+          0
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -291,7 +260,6 @@
       },
       {
         "data": [
-          49,
           0,
           0,
           0,
@@ -299,7 +267,6 @@
           0
         ],
         "backgroundColor": [
-          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -315,11 +282,9 @@
           0,
           0,
           0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
