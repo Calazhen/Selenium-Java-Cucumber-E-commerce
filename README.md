@@ -15,7 +15,6 @@ Antes de executar os testes, certifique-se de que os seguintes softwares estão 
 [Chrome](https://www.google.com/intl/pt-BR/chrome/)
 
 [ChromeDriver](https://chromedriver.chromium.org/downloads)
-
 ## Funcionalidades
 
 ### Cadastro_usuario:
@@ -59,11 +58,13 @@ cd Selenium-Java-Cucumber-E-commerce
 3. Execute os testes utilizando o Maven:
 
 ```powershell
-mvn test -Dtest=**/*RunCucumberTest cluecumber-report:reporting
+mvn test -Dtest=**/*RunCucumberTest -Dbrowser=chrome
 ```
+4. Gere o relatório do cucumber:
 
-
-
+```powershell
+mvn cluecumber-report:reporting
+```
 
 ### Contatos:
 Caso tenha alguma dúvida poderá entrar em contato pelo meu [Linkedin](https://www.linkedin.com/in/henrique-calazans/)
