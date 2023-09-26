@@ -16,7 +16,7 @@
         "after": [
           {
             "result": {
-              "duration": 62400,
+              "duration": 62700,
               "status": "passed"
             },
             "match": {
@@ -29,7 +29,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2745638500,
+              "duration": 3352079700,
               "status": "passed"
             },
             "line": 7,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 629505900,
+              "duration": 619882700,
               "status": "passed"
             },
             "line": 8,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 758309400,
+              "duration": 836902400,
               "status": "passed"
             },
             "line": 9,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 54330800,
+              "duration": 58780600,
               "status": "passed"
             },
             "line": 10,
@@ -77,13 +77,19 @@
           },
           {
             "result": {
-              "duration": 59913600,
+              "duration": 71766800,
               "status": "passed"
             },
             "line": 11,
-            "name": "vejo a mensage de cadastro realizado com sucesso",
+            "name": "vejo a mensagem \"Cadastro realizado!\" com sucesso",
             "match": {
-              "location": "SecretSteps.vejo_a_mensage_de_cadastro_realizado_com_sucesso()"
+              "arguments": [
+                {
+                  "val": "Cadastro realizado!",
+                  "offset": 17
+                }
+              ],
+              "location": "SecretSteps.vejo_a_mensagem_com_sucesso(String)"
             },
             "keyword": "Entao "
           }
@@ -115,17 +121,17 @@
         "value": "#language: pt"
       }
     ],
-    "line": 3,
+    "line": 4,
     "elements": [
       {
-        "line": 6,
-        "name": "Enviar uma mensagem com sucesso",
+        "line": 10,
+        "name": "Login com sucesso",
         "description": "",
-        "id": "enviar-mensagem-com-anexo;enviar-uma-mensagem-com-sucesso",
+        "id": "login;login-com-sucesso",
         "after": [
           {
             "result": {
-              "duration": 33600,
+              "duration": 28400,
               "status": "passed"
             },
             "match": {
@@ -138,7 +144,528 @@
         "steps": [
           {
             "result": {
-              "duration": 5467548100,
+              "duration": 2713565100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 828724300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho login \"henrique.calazans@test.com\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "henrique.calazans@test.com",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 61229600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 72010000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "vejo a mensagem \"Login realizado\" com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login realizado",
+                  "offset": 17
+                }
+              ],
+              "location": "SecretSteps.vejo_a_mensagem_com_sucesso(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@login-sucesso"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "falha no login, email",
+        "description": "",
+        "id": "login;falha-no-login,-email;valores-inválidos-para-e-mail;2",
+        "after": [
+          {
+            "result": {
+              "duration": 15900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.takeScreenShoot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2698499500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 803701500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho login \"a.com\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a.com",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 52330900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 51319100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "vejo a mensagem de email \"E-mail inválido.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 16,
+            "name": "@login-falha"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "falha no login, email",
+        "description": "",
+        "id": "login;falha-no-login,-email;valores-inválidos-para-e-mail;3",
+        "after": [
+          {
+            "result": {
+              "duration": 21500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.takeScreenShoot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2772988900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 826357500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho login \"1.com\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1.com",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 51829000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 59812000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "vejo a mensagem de email \"E-mail inválido.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 16,
+            "name": "@login-falha"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "falha no login, email",
+        "description": "",
+        "id": "login;falha-no-login,-email;valores-inválidos-para-e-mail;4",
+        "after": [
+          {
+            "result": {
+              "duration": 17200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.takeScreenShoot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2720297100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 804146800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho login \"1@.com\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1@.com",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 49623500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 52583200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "vejo a mensagem de email \"E-mail inválido.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 16,
+            "name": "@login-falha"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "falha no login, email",
+        "description": "",
+        "id": "login;falha-no-login,-email;valores-inválidos-para-e-mail;5",
+        "after": [
+          {
+            "result": {
+              "duration": 14400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.takeScreenShoot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2723584300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 832110500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho login \"1@a\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1@a",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 49614100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 65664700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "vejo a mensagem de email \"E-mail inválido.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 16,
+            "name": "@login-falha"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "Eu como usuário do sistema\r\nQuero fazer login\r\nPara fazer uma compra no site",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@login"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Enviar uma mensagem com sucesso",
+        "description": "",
+        "id": "enviar-mensagem-com-anexo;enviar-uma-mensagem-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 27400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.takeScreenShoot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4511276800,
               "status": "passed"
             },
             "line": 7,
@@ -150,7 +677,7 @@
           },
           {
             "result": {
-              "duration": 525910800,
+              "duration": 510547400,
               "status": "passed"
             },
             "line": 8,
@@ -162,7 +689,7 @@
           },
           {
             "result": {
-              "duration": 68234000,
+              "duration": 48204300,
               "status": "passed"
             },
             "line": 9,
@@ -174,7 +701,7 @@
           },
           {
             "result": {
-              "duration": 42565400,
+              "duration": 49244800,
               "status": "passed"
             },
             "line": 10,

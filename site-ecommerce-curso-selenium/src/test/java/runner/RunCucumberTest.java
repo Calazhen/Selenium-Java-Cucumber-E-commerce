@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"json:target/reports/cucumberReport.json","html:target/reports/"},
+        plugin = {"json:target/reports/cucumberReport.json", "html:target/reports/"},
         features = "src/resources/features",
-        tags = {"~@ignore"}, //~@ignore para todos os testes com a anotação diferente de ignore
+        tags = {"@login"}, //~@ignore para todos os testes com a anotação diferente de ignore
         glue = {"steps"}
 
 )
