@@ -30,4 +30,5 @@ public class CadastroPage extends RunCucumberTest {
     public void clicarBotaoCadastrar() {
         getDriver().findElement(botao_cadastrar).click();
     }
+    
 }
