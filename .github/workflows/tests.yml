@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '8'
-          distribuition: 'corretto'
+          distribution: 'corretto'
           cache: 'maven'
 
       - name: Instalar Chrome
