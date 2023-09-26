@@ -2,6 +2,7 @@ package runner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class RunBase {
@@ -28,6 +29,7 @@ public class RunBase {
 
         switch (browser) {
             case CHROME:
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\calaz\\chromedriver.exe");
                 ChromeOptions chromeoptions = new ChromeOptions();
                 chromeoptions.addArguments("--headless");
                 driver = new ChromeDriver(chromeoptions);
