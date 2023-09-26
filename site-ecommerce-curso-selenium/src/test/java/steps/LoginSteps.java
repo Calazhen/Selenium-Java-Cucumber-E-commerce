@@ -20,14 +20,14 @@ public class LoginSteps extends RunCucumberTest {
     }
 
     @Quando("^preencho login \"([^\"]*)\" e senha \"([^\"]*)\"$")
-    public void preencho_login_e_senha(String email, String senha ) {
+    public void preencho_login_e_senha(String email, String senha) {
         loginPage.preencheEmail(email);
         loginPage.preencheSenha(senha);
 
     }
 
     @Quando("^clico em Login$")
-    public void clico_em_Login(){
+    public void clico_em_Login() {
         loginPage.clicaBotaoLogin();
 
     }
@@ -44,13 +44,13 @@ public class LoginSteps extends RunCucumberTest {
     }
 
     @After
-    public static void takeScreenShoot (Scenario scenario){
+    public static void takeScreenShoot(Scenario scenario) {
         if ((scenario.isFailed())) {
-        System.out.println("============================");
-        System.out.println("Test que falhou: " + scenario.getName());
-        System.out.println("Status: " + scenario.getStatus());
-        System.out.println("Tag: " + scenario.getSourceTagNames());
-        System.out.println("============================");
+            System.out.println("============================");
+            System.out.println("Test que falhou: " + scenario.getName());
+            System.out.println("Status: " + scenario.getStatus());
+            System.out.println("Tag: " + scenario.getSourceTagNames());
+            System.out.println("============================");
             // Tirar print da tela
             ScreenshotUtils.addScreenshotOnScenario(scenario);
         }

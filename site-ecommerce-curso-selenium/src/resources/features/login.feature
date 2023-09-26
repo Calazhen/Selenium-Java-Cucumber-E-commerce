@@ -11,7 +11,7 @@ Funcionalidade: Login
     Dado que estou na tela de login
     Quando preencho login "henrique.calazans@test.com" e senha "123456"
     E clico em Login
-    Então vejo a mensagem "login com sucesso" com sucesso
+    Então vejo a mensagem "Login realizado" com sucesso
 
   @login-falha
   Esquema do Cenário: falha no login, email
@@ -21,11 +21,11 @@ Funcionalidade: Login
     Então vejo a mensagem de email "<Mensagem>"
 
     Exemplos: Valores inválidos para e-mail
-      | E-mail  | Senha  | Mensagem        |
-      | a.com   | 123456 | E-mail inválido. |
-      | 1.com   | 123456 | E-mail inválido. |
-      | 1@.com  | 123456 | E-mail inválido. |
-      | 1@a     | 123456 | E-mail inválido. |
+      | E-mail | Senha  | Mensagem         |
+      | a.com  | 123456 | E-mail inválido. |
+      | 1.com  | 123456 | E-mail inválido. |
+      | 1@.com | 123456 | E-mail inválido. |
+      | 1@a    | 123456 | E-mail inválido. |
 
 
 

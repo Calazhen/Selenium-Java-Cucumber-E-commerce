@@ -54,13 +54,14 @@ public class MensagemPage extends RunCucumberTest {
         getDriver().findElement(botao_enviar_mensagem).click();
     }
 
-    public void verificaMensagemAlert(String sucesso_alert){
+    public void verificaMensagemAlert(String sucesso_alert) {
         Alert alert = getDriver().switchTo().alert();
-        Assert.assertEquals(sucesso_alert,alert.getText());
+        Assert.assertEquals(sucesso_alert, alert.getText());
         alert.accept();
     }
-    public void verificaMensagemSucesso (String mensagem_de_sucesso){
-        Assert.assertEquals(mensagem_de_sucesso,getDriver().findElement(mensagem_sucesso).getText());
+
+    public void verificaMensagemSucesso(String mensagem_de_sucesso) {
+        Assert.assertEquals(mensagem_de_sucesso, getDriver().findElement(mensagem_sucesso).getText());
 
     }
 

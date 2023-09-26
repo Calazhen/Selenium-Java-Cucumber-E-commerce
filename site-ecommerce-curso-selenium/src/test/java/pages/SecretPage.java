@@ -12,10 +12,9 @@ public class SecretPage extends RunCucumberTest {
 
 
     public void verificaMensagemCadastroSucesso(String mensagemEsperada) {
-        Utils.esperarElementoEstarVisivel(mensagem_cadastro_sucesso,8);
+        Utils.esperarElementoEstarVisivel(mensagem_cadastro_sucesso, 8);
         Assert.assertEquals(mensagemEsperada, getDriver().findElement(mensagem_cadastro_sucesso).getText());
     }
-
 
 
 }
