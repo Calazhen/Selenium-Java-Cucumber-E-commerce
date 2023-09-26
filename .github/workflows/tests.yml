@@ -34,6 +34,4 @@ jobs:
         run: cd site-ecommerce-curso-selenium
 
       - name: Run tests
-      - run: 
-          cd site-ecommerce-curso-selenium
-          mvn test -Dtest=**/*RunCucumberTest -Dbrowser=chrome
+      - run: mvn test -Dtest=**/*RunCucumberTest -Dbrowser=chrome
