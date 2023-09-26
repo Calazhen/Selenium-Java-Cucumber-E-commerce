@@ -1,8 +1,8 @@
 name: Smoke Tests - PR
 
 on:
-  pull_request:
-    branches: [ master ]
+  push:
+    branches: [ cucumber-multiplos-cenarios ]
 
 jobs:
   RunTest:
