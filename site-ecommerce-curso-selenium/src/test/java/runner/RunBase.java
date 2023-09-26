@@ -29,7 +29,6 @@ public class RunBase {
 
         switch (browser) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\calaz\\chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 driver = new ChromeDriver(chromeOptions);
