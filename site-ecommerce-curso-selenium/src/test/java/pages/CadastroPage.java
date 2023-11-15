@@ -6,6 +6,7 @@ import support.Utils;
 
 public class CadastroPage extends RunCucumberTest {
 
+    //
     final private By ainda_nao_tem_conta = By.cssSelector("#createAccount");
     final private By campo_usuario = By.id("user");
     final private By campo_email = By.id("email");
