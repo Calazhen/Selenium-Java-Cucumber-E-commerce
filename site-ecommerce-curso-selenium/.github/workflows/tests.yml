@@ -2,7 +2,7 @@ name: Smoke Tests - push
 
 on:
   push:
-    branches: [ cucumber-multiplos-cenarios ]
+    branches: [ master ]
 
 jobs:
   RunTest:

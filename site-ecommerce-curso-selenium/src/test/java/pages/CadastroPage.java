@@ -8,7 +8,7 @@ public class CadastroPage extends RunCucumberTest {
 
     final  private By ainda_nao_tem_conta = By.cssSelector("#createAccount");
     final  private By campo_usuario = By.id("user");
-    final private By campo_email = By.id("email");
+    final private By campo_email = By.id("emai");
     final private By campo_senha = By.id("password");
     final private By botao_cadastrar = By.id("btnRegister");
 
