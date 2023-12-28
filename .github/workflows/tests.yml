@@ -1,9 +1,6 @@
 name: Smoke Tests - PR
 
-on:
-  pull_request:
-    branches: [ master ]
-
+on: [push]
 jobs:
   RunTest:
     runs-on: ubuntu-latest
