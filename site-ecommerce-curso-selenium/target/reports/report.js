@@ -56,7 +56,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 7596091599,
+  "duration": 6214169700,
   "status": "passed"
 });
 formatter.match({
@@ -73,14 +73,14 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "duration": 835533100,
+  "duration": 812980700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "duration": 64716200,
+  "duration": 52286400,
   "status": "passed"
 });
 formatter.match({
@@ -93,11 +93,11 @@ formatter.match({
   "location": "SecretSteps.vejo_a_mensagem_com_sucesso(String)"
 });
 formatter.result({
-  "duration": 59438400,
+  "duration": 58129400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 72801,
+  "duration": 81900,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -237,7 +237,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 4075076700,
+  "duration": 3405408400,
   "status": "passed"
 });
 formatter.match({
@@ -254,14 +254,14 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "duration": 807699400,
+  "duration": 820711400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "duration": 54582199,
+  "duration": 55002200,
   "status": "passed"
 });
 formatter.match({
@@ -274,11 +274,11 @@ formatter.match({
   "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
 });
 formatter.result({
-  "duration": 62311900,
+  "duration": 51926800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17199,
+  "duration": 15000,
   "status": "passed"
 });
 formatter.scenario({
@@ -330,7 +330,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 2814699799,
+  "duration": 3387581100,
   "status": "passed"
 });
 formatter.match({
@@ -347,14 +347,14 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "duration": 795631601,
+  "duration": 806976700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "duration": 37408900,
+  "duration": 39804100,
   "status": "passed"
 });
 formatter.match({
@@ -367,11 +367,11 @@ formatter.match({
   "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
 });
 formatter.result({
-  "duration": 55060800,
+  "duration": 51518200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14900,
+  "duration": 17100,
   "status": "passed"
 });
 formatter.scenario({
@@ -423,7 +423,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 4473909399,
+  "duration": 3277661100,
   "status": "passed"
 });
 formatter.match({
@@ -440,14 +440,14 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "duration": 791306700,
+  "duration": 818930100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "duration": 39767400,
+  "duration": 54101200,
   "status": "passed"
 });
 formatter.match({
@@ -460,11 +460,11 @@ formatter.match({
   "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
 });
 formatter.result({
-  "duration": 54602399,
+  "duration": 53549000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16501,
+  "duration": 16400,
   "status": "passed"
 });
 formatter.scenario({
@@ -516,7 +516,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 2822314900,
+  "duration": 3231548700,
   "status": "passed"
 });
 formatter.match({
@@ -533,14 +533,14 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "duration": 797640199,
+  "duration": 814502400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "duration": 39189999,
+  "duration": 39209200,
   "status": "passed"
 });
 formatter.match({
@@ -553,11 +553,11 @@ formatter.match({
   "location": "LoginSteps.vejo_a_mensagem_de_email(String)"
 });
 formatter.result({
-  "duration": 55851999,
+  "duration": 53975300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25200,
+  "duration": 17000,
   "status": "passed"
 });
 });

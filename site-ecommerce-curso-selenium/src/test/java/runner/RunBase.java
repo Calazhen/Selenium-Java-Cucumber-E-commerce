@@ -29,13 +29,14 @@ public class RunBase {
 
         switch (browser) {
             case CHROME:
+                System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\resources\\chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver", "C:\\Users\\calaz\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\resources\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
 
