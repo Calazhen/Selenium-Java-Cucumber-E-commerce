@@ -20,7 +20,7 @@ public class LoginPage extends RunCucumberTest {
 
     public void acessaAplicacao() {
         String browser = System.getProperty("browser").toUpperCase();
-        getDriver(RunBase.Browser.valueOf(browser)).get("https://automationpratice.com.br/ ");
+        getDriver(RunBase.Browser.valueOf(browser)).get("https://automationpratice.com.br/");
     }
 
     public void acessarTelaLogin() {
