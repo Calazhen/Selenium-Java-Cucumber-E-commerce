@@ -3,7 +3,7 @@ name: Sample Tests - Push
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   RunTest:
@@ -18,7 +18,7 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Instalar Dependências
+      - name: Instalar Firefox
         run: |
           sudo apt-get update
           sudo apt-get install -y firefox
