@@ -12,7 +12,7 @@ public class LoginPage extends RunCucumberTest {
 
 
     final private By botao_acessa_tela_login = By.cssSelector("#top_header > div > div > div:nth-child(2) > div > ul > li:nth-child(1) > a");
-    final private By campo_email = By.id("user");
+    final private By campo_email = By.id("oser");
     final private By campo_senha = By.id("password");
     final private By botao_login = By.id("btnLogin");
     final private By mensagem_erro_email = By.cssSelector("#login_area > div > div > div > div > div:nth-child(2) > span");
