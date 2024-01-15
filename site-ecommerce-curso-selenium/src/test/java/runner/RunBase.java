@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class RunBase {
 
@@ -37,7 +38,9 @@ public class RunBase {
 
             case FIREFOX:
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\resources\\geckodriver.exe");
-                driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.setHeadless(true);
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
 
             default:
